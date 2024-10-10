@@ -1,4 +1,4 @@
-import { Card } from "./Card";
+import { Card } from "./Cart";
 
 export const Home = () => {
   return (
@@ -12,3 +12,5 @@ export const Home = () => {
     </main>
   );
 };
+
+export default Home;

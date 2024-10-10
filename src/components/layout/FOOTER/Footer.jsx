@@ -1,7 +1,7 @@
 import "./footer.css";
 export const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <p>Todos los derechos reservados</p>
     </footer>
   );
