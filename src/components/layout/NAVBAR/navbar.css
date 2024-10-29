@@ -16,7 +16,7 @@
 }
 
 nav {
-  background: linear-gradient(to right, rgb(74, 74, 195), rgb(122, 147, 169));
+  background: linear-gradient(to right, rgb(234, 110, 110), rgb(122, 147, 169));
   padding: 0px;
   display: flex;
   justify-content: space-between;

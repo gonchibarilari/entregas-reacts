@@ -6,7 +6,7 @@ export let products = [
     description:
       "Notebook Asus X515, ideal para trabajar con la potencia necesaria",
     imageUrl:
-      "https://res.cloudinary.com/deg6afpqs/image/upload/v1729992591/aSUS_x515_rgg79x.webp",
+      "https://img.freepik.com/foto-gratis/vista-frontal-champu-embotellado-blanco-tapa-negra-aislado-pared-blanca_140725-11692.jpg?t=st=1730241132~exp=1730244732~hmac=c8fc379006b9278d8d7b470d51504571cd63949c052687ead604148532d08d76&w=826",
     stock: 5,
     category: "trabajo",
   },
@@ -18,7 +18,7 @@ export let products = [
     description: "Shampoo cabello deshitrado",
     category: "trabajo",
     imageUrl:
-      "https://res.cloudinary.com/deg6afpqs/image/upload/v1729992591/Lenovo_LOQ_15_bsoyvi.avif",
+      "https://img.freepik.com/fotos-premium/botella-bomba-negra-mate-rodeada-vegetacion_1220715-1801.jpg?w=1060",
   },
   {
     id: "3",
@@ -28,7 +28,7 @@ export let products = [
     description: "Acondicionador cabello deshitrado",
     category: "gamer",
     imageUrl:
-      "https://res.cloudinary.com/deg6afpqs/image/upload/v1729992591/Lenovo_Legion_Pro_5_dyhetw.jpg",
+      "https://img.freepik.com/foto-gratis/cantimplora-naranja_1203-882.jpg?t=st=1730242366~exp=1730245966~hmac=9bdcb7d21b4c6a602bc52c5a4fdbb1a876edffd1f03f865b16d5854469eb5039&w=740",
   },
   {
     id: "4",
@@ -38,6 +38,6 @@ export let products = [
     description: "Acondicionador vegano",
     category: "gamer",
     imageUrl:
-      "https://res.cloudinary.com/deg6afpqs/image/upload/v1729992591/Asus_Rog_hqabng.webp",
+      "https://img.freepik.com/foto-gratis/pack-tres-recipientes-crema_1203-1847.jpg?t=st=1730242401~exp=1730246001~hmac=f2c7a7b0ad8acb4f42bc49929527f20f412bfbe4b5534a15278a233501641c64&w=740",
   },
 ];
