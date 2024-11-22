@@ -1,10 +1,8 @@
-// Navbar.jsx
 import React, { useState } from "react";
-
+import { CartWidget } from "../../common/cartWidget/CartWidget";
 import { Darkbar } from "../../common/darkbar/Darkbar";
+import "./navbar.css";
 import { Link } from "react-router-dom";
-import CartWidget from "../../common/cartWidget/CartWidget";
-import "./Navbar.css";
 
 export const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -18,7 +16,7 @@ export const Navbar = () => {
       <nav className={`nav ${darkMode ? "dark-mode" : ""}`}>
         <Link to="/">
           <img
-            src="https://img.freepik.com/foto-gratis/mujer-joven-talla-media-cabello-rizado_23-2151317376.jpg?t=st=1730242444~exp=1730246044~hmac=3926ac8960eb1519f9d3f0cdd81dbd047a67c67ecef47066a8411eac916c425b&w=740"
+            src="https://res.cloudinary.com/deg6afpqs/image/upload/v1728253484/logo-removebg-preview_qvfwj2.png"
             alt=""
             style={{
               width: "100px",
@@ -27,9 +25,9 @@ export const Navbar = () => {
           />
         </Link>
         <ul className="links">
-          <Link to="/"> PRODUCTOS </Link>
-          <Link to="/category/gamer">ACONDICIONADOR</Link>
-          <Link to="/category/trabajo">SHAMPOO</Link>
+          <Link to="/"> Todas las Notebooks </Link>
+          <Link to="/category/gamer">Notebooks Gamers</Link>
+          <Link to="/category/trabajo">Notebooks de Trabajo</Link>
         </ul>
 
         <div className="nav-icons">
@@ -40,5 +38,3 @@ export const Navbar = () => {
     </div>
   );
 };
-
-export default Navbar;

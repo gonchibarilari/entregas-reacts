@@ -25,6 +25,12 @@ const Counter = ({ stock, agregarAlCarrito }) => {
       <button onClick={sumar}>sumar</button>
       <h2>Contador = {contador}</h2>
       <button onClick={restar}>restar</button>
+      <h1>
+        {" "}
+        swl
+        <h1></h1>
+      </h1>
+      <link rel="stylesheet" href=" " />
 
       <button onClick={() => agregarAlCarrito(contador)}>
         Agregar al carrito

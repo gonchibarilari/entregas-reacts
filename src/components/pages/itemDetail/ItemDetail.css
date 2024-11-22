@@ -1,0 +1,31 @@
+.item-detail {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .item-title {
+    font-family: "Arial", sans-serif;
+    font-size: 28px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .item-description {
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    padding: 0 15px;
+  }

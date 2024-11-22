@@ -7,14 +7,14 @@ export let products = [
       "Notebook Asus X515, ideal para trabajar con la potencia necesaria",
     imageUrl:
       "https://img.freepik.com/foto-gratis/vista-frontal-champu-embotellado-blanco-tapa-negra-aislado-pared-blanca_140725-11692.jpg?t=st=1730241132~exp=1730244732~hmac=c8fc379006b9278d8d7b470d51504571cd63949c052687ead604148532d08d76&w=826",
-    stock: 5,
+    stock: 3,
     category: "trabajo",
   },
   {
     id: "2",
     title: "Shampoo cabello deshitrado",
     price: 6,
-    stock: 8,
+    stock: 2,
     description: "Shampoo cabello deshitrado",
     category: "trabajo",
     imageUrl:
@@ -24,7 +24,7 @@ export let products = [
     id: "3",
     title: "Acondicionador cabello deshitrado",
     price: 12,
-    stock: 5,
+    stock: 1,
     description: "Acondicionador cabello deshitrado",
     category: "gamer",
     imageUrl:
@@ -34,7 +34,7 @@ export let products = [
     id: "4",
     title: "Acondicionador vegano",
     price: 23,
-    stock: 5,
+    stock: 1,
     description: "Acondicionador vegano",
     category: "gamer",
     imageUrl:
