@@ -71,10 +71,10 @@ const ItemDetail = ({ id, title, description, imageUrl, price, stock }) => {
     <div className="item-detail">
       <ToastContainer />
       <h1 className="item-title">{title}</h1>
-      <Typography variant="h2" component="p">
+      <Typography variant="h5" component="p">
         Precio: U$S{price}
       </Typography>
-      <Typography variant="h3" component="p">
+      <Typography variant="h6" component="p">
         Stock disponible: {stock}
       </Typography>
       <img src={imageUrl} alt={title} className="item-image" />
