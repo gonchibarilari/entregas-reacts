@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react"; // Importación correcta y única
-import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
-import { Box, Typography } from "@mui/material";
+import { useParams } from "react-router-dom";
 import Skeleton from "@mui/material/Skeleton";
+import { Box, Typography } from "@mui/material";
 import { db } from "../../../context/firebaseConfig/firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
-import { products } from "../../../products"; // Asegúrate de que esta importación sea necesaria
 
 export const ItemListContainer = () => {
   const { name } = useParams();
@@ -13,24 +12,8 @@ export const ItemListContainer = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Primero, filtramos los productos estáticos (si existen) por categoría
-    const unaFraccion = products.filter(
-      (producto) => producto.category === name
-    );
+    setLoading(true);
 
-    // Utilizamos una promesa para decidir si usamos productos estáticos o Firestore
-    const getProducts = new Promise((resolve) => {
-      resolve(name ? unaFraccion : products);
-    });
-
-    // Cuando obtenemos la promesa, actualizamos el estado
-    getProducts.then((res) => {
-      setItems(res);
-    });
-
-    setLoading(true); // Indicamos que los datos están siendo cargados
-
-    // Función asincrónica para obtener los productos de Firestore
     const fetchProducts = async () => {
       try {
         const querySnapshot = await getDocs(collection(db, "products"));
@@ -38,21 +21,22 @@ export const ItemListContainer = () => {
           id: doc.id,
           ...doc.data(),
         }));
+
         const filteredProducts = name
           ? allProducts.filter((producto) => producto.category === name)
           : allProducts;
-        setItems(filteredProducts); // Actualizamos el estado con los productos filtrados
+
+        setItems(filteredProducts);
       } catch (error) {
         console.error("Error al obtener productos de Firestore:", error);
       } finally {
-        setLoading(false); // Indicamos que la carga ha finalizado
+        setLoading(false);
       }
     };
 
-    fetchProducts(); // Llamamos a la función para obtener los productos
-  }, [name]); // El efecto solo se ejecutará cuando el valor de 'name' cambie
+    fetchProducts();
+  }, [name]);
 
-  // Renderizamos el contenido
   return (
     <Box>
       <Typography
@@ -61,7 +45,6 @@ export const ItemListContainer = () => {
       >
         <h2>Listado de productos</h2>
       </Typography>
-
       <Box
         display="flex"
         justifyContent="space-around"
@@ -96,7 +79,7 @@ export const ItemListContainer = () => {
             </Box>
           ))
         ) : (
-          <ItemList items={items} /> // Una vez que los datos se cargan, mostramos los productos
+          <ItemList items={items} />
         )}
       </Box>
     </Box>
