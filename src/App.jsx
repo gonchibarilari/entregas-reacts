@@ -5,6 +5,7 @@ import { Navbar } from "./components/layout/navbar/Navbar";
 import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer";
 import { CartProvider } from "./context/CartContext";
 import Checkout from "./components/pages/checkout/Checkout";
+import Footer from "./components/layout/FOOTER/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />{" "}
         </Routes>
       </BrowserRouter>
+      <Footer />
     </CartProvider>
   );
 }

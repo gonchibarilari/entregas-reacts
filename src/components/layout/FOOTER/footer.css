@@ -1,13 +1,11 @@
 .footer {
+  background: linear-gradient(to right, rgb(247, 177, 177), rgb(122, 147, 169));
+  padding: 0px;
+  text-align: center;
+
   display: flex;
   justify-content: center;
-  background: linear-gradient(to right, rgb(234, 110, 110), rgb(122, 147, 169));
-  padding: 0px;
-  display: flex;
   align-items: center;
+  padding: 50px;
   transition: background 0.3s ease;
-}
-
-.p {
-  size: 40px;
 }

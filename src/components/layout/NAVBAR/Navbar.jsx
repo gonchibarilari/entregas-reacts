@@ -25,9 +25,9 @@ export const Navbar = () => {
           />
         </Link>
         <ul className="links">
-          <Link to="/"> Todas las Notebooks </Link>
-          <Link to="/category/gamer">Notebooks Gamers</Link>
-          <Link to="/category/trabajo">Notebooks de Trabajo</Link>
+          <Link to="/"> TODAS LAS NOTEBOOKS </Link>
+          <Link to="/category/gamer">GAMING</Link>
+          <Link to="/category/trabajo">JOBS</Link>
         </ul>
 
         <div className="nav-icons">
